@@ -1,0 +1,14 @@
+{
+    "name": "Knowit.UnityTUIO",
+    "references": [
+        "GUID:59b3c976ad47ac24986a981e7089302c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}

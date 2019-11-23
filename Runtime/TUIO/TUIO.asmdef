@@ -1,0 +1,14 @@
+{
+    "name": "TUIO",
+    "references": [
+        "GUID:f85a72c1342068e44a89b5c805fb3514"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}

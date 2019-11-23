@@ -1,0 +1,11 @@
+{
+  "name": "com.knowit.unitytuio",
+  "displayName": "Unity TUIO",
+  "version": "1.0.0",
+  "unity": "2019.1",
+  "description": "",
+  "keywords": [
+    "Reactivision",
+    "TUIO"
+  ]
+}
