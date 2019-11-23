@@ -55,7 +55,7 @@ public class TUIOSpawnPlane : MonoBehaviour
             var position = new Vector3(
                 Mathf.LerpUnclamped(transform.position.x - (Size.x/2), transform.position.x + (Size.x / 2), visibleObject.Position.x), 
                 transform.position.y,
-                Mathf.LerpUnclamped(transform.position.y - (Size.y / 2), transform.position.y + (Size.y / 2), visibleObject.Position.y));
+                Mathf.LerpUnclamped(transform.position.z + (Size.y / 2), transform.position.z - (Size.y / 2), visibleObject.Position.y));
 
             sceneObject.transform.SetPositionAndRotation(
                 RotateAroundPoint(position, transform.position, transform.rotation),
@@ -68,10 +68,12 @@ public class TUIOSpawnPlane : MonoBehaviour
 
     void OnDrawGizmos()
     {
+        Gizmos.matrix = Matrix4x4.TRS(transform.position, transform.rotation, Vector3.one);
+
         Gizmos.color = new Color(Color.blue.r, Color.blue.g, Color.blue.b, 0.1f);
-        Gizmos.DrawCube(transform.position, new Vector3(Size.x, 0.0f, Size.y));
+        Gizmos.DrawCube(Vector3.zero, new Vector3(Size.x, 0.0f, Size.y));
 
         Gizmos.color = Color.black;
-        Gizmos.DrawWireCube(transform.position, new Vector3(Size.x, 0.0f, Size.y));
+        Gizmos.DrawWireCube(Vector3.zero, new Vector3(Size.x, 0.0f, Size.y));
     }
 }
